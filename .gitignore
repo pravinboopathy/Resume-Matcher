@@ -105,3 +105,9 @@ next-env.d.ts
 # Config file with API keys - NEVER COMMIT
 config.json
 **/config.json
+
+# Job Tailor CLI
+tools/job-tailor/config/credentials.json
+tools/job-tailor/config/token.json
+tools/job-tailor/data/output/
+tools/job-tailor/data/processed_jobs.json

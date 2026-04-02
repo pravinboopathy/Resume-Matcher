@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,
+top=0.5in,
+bottom=0.5in,
+left=0.5in,
+right=0.5in]{geometry}
+
+\usepackage{charter}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\raggedright
+\pagestyle{empty}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt}
+
+\begin{document}
+
+% name
+\centerline{\Huge Pravin Boopathy}
+
+\vspace{5pt}
+
+% contact info
+\centerline{\href{mailto:boopathypravin@gmail.com}{boopathypravin@gmail.com} \,|\, Madison, WI \,|\, \href{https://linkedin.com/in/pravin-boopathy}{linkedin.com/in/pravin-boopathy}}
+
+\vspace{-10pt}
+
+% skills
+\section*{Skills}
+\textbf{Languages:} Go, Python, C\#, C++, TypeScript, SQL \\
+\textbf{Cloud \& DevOps:} Kubernetes, Terraform, Azure, AWS, Docker \\
+\textbf{Distributed Systems \& Protocols:} REST APIs, gRPC, NATS 
+
+\vspace{-6.5pt}
+
+% experience
+\section*{Experience}
+
+\textbf{Software Engineer,} Epic Systems -- Verona, WI \hfill Jul 2024 -- Present \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Built Go microservices, C\# client libraries, and infrastructure-as-code tooling using Terraform and Kubernetes, supporting cloud-native solutions across 400+ production environments.
+  \item Designed and implemented bidirectional monitoring between cloud and on-premises environments, cutting outage detection latency from up to 2 hours to under 15 minutes for 95\% of failure modes. Streamlined incident response with a real-time notification system that coordinated outage status across services and automatically alerted impacted teams and customers.
+  \item Developed tiered blob storage APIs and policy-based data lifecycle automation, enabling scalable storage across diverse workloads with long-term costs reduced by up to 80\%.
+  \item Engineered a Python ETL pipeline to index platform-wide documentation into Elasticsearch and codebases into an internal code search tool (CodeSearch), enabling RAG-powered search and on-demand retrieval of external references (Kubernetes, Prometheus, Grafana) for 500+ engineers across Epic.
+  \item Architected an AI-powered alert investigation agent in Python using RAG and MCP, autonomously analyzing live metrics, logs, and Azure telemetry to diagnose firing alerts end-to-end and generate contextual Grafana dashboards on demand, reducing on-call burden and accelerating root cause diagnosis.
+  \item Created an AI-powered observability design review tool, surfacing relevant internal and external references during architectural reviews. Reduced design review time by 30\% and adopted by 10+ teams on the cloud platform.
+
+\end{itemize}
+
+\textbf{Software Engineering Intern,} Epic Systems -- Verona, WI \hfill May 2023 -- Aug 2023 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Designed a data recommendation system to automatically suggest relevant form entries based on user input, integrating with internal APIs for real-time, system-wide data comparison.
+  \item Built backend services in C\# and frontend components in React and TypeScript, significantly reducing user interactions required to complete complex workflows.
+\end{itemize}
+
+\textbf{Software Engineering Intern,} Emeritus -- Boston, MA \hfill Jun 2022 -- Aug 2022 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Automated data migration pipeline from Canvas LMS to a self-hosted platform using Python, reducing yearly operational costs by \$300K.
+\end{itemize}
+
+% projects
+\section*{Projects}
+
+\textbf{Perception Subteam Lead,} Wisconsin Autonomous -- Madison, WI \hfill Sep 2021 -- Jul 2024 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Led 30+ member team to 4th place finish in SAE AutoDrive II competition. Managed technical roadmap, sprint planning, and hands-on mentorship.
+  \item Engineered low-latency, multithreaded data pipelines in C++ and ROS for real-time sensor fusion and object detection, achieving under 100ms end-to-end.
+\end{itemize}
+
+% education
+\section*{Education}
+\textbf{University of Wisconsin-Madison} -- BS Computer Science, GPA: 3.92 \hfill May 2024
+
+\end{document}
+
